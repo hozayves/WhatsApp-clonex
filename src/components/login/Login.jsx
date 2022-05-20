@@ -1,18 +1,11 @@
 import React from "react";
 import "./login.css";
 import { Button } from "@material-ui/core";
-import { auth, Provider } from "../../firebase";
-import { signInWithPopup } from "firebase/auth";
+import { signInWithGoogle } from "../../firebase";
 
 const Login = () => {
   const singIn = async () => {
-    await signInWithPopup(auth, Provider)
-      .then((result) => {
-        console.log(result);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+    signInWithGoogle();
   };
   return (
     <div className="login">
