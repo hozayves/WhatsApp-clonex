@@ -1,2 +1,2 @@
-# WhatsApp-clonex
+# WhatsApp-clone
 Created with CodeSandbox
